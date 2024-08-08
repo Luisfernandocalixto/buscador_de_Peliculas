@@ -45,7 +45,7 @@ function displayMovies(movies) {
         releaseDate.textContent = 'Fecha de lanzamiento: ' + movie.release_date
 
         let overview = document.createElement('p')
-        overview.textContent = movie.overview
+        overview.textContent = 'Sinopsis: ' + movie.overview
 
 
         let posterPath = urlImg + movie.poster_path
