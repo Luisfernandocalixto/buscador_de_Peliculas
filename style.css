@@ -2,9 +2,9 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: #005AA7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #fffde47e, #0059a7c2), url(./img/tmdb_logo.png);
+  background: -webkit-linear-gradient(to top, #fffde47e, #0059a7c2), url(./img/tmdb_logo.webp);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #fffde483, #0059a7c6), url(./img/tmdb_logo.png);
+  background: linear-gradient(to top, #fffde483, #0059a7c6), url(./img/tmdb_logo.webp);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-attachment: fixed;
   background-position: center;
@@ -39,9 +39,11 @@ h1 {
 
 input[type="text"] {
   width: 200px;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 16px;
   border-radius: 8px;
+  border: none;
+  outline: none;
 }
 
 input:hover {
@@ -63,12 +65,19 @@ button:hover {
 }
 
 #results {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 20px;
   text-align: left;
+
 }
 
 .movie {
   min-height: 200px;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
   margin-bottom: 10px;
   padding: 10px;
   background-color: #f5f5f5;
@@ -76,9 +85,16 @@ button:hover {
 }
 
 .movie img {
-  width: 100px;
-  float: left;
-  margin-right: 10px;
+  transition: .5s all;
+  -webkit-transition: 5s all;
+  -moz-transition: 5s all;
+  -ms-transition: 5s all;
+  -o-transition: 5s all;
+}
+
+.movie img:hover {
+  display: none;
+
 }
 
 .movie h2 {
@@ -87,6 +103,7 @@ button:hover {
 }
 
 .movie p {
+  font-size: 12px;
   margin: 5px 0;
 }
 
