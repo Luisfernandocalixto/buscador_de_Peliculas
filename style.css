@@ -1,0 +1,127 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #005AA7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fffde47e, #0059a7c2), url(./img/tmdb_logo.webp);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #fffde483, #0059a7c6), url(./img/tmdb_logo.webp);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+#Recomendar {
+  font-size: 20px;
+  color: #fff;
+  text-indent: 20px;
+  line-height: 20px;
+}
+
+#Recomendar img {
+  vertical-align: middle;
+}
+
+#Image {
+  border-radius: 15px;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+input:hover {
+  background: #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #a01a10;
+}
+
+#results {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: left;
+
+}
+
+.movie {
+  min-height: 200px;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.movie img {
+  transition: .5s all;
+  -webkit-transition: 5s all;
+  -moz-transition: 5s all;
+  -ms-transition: 5s all;
+  -o-transition: 5s all;
+}
+
+.movie img:hover {
+  display: none;
+
+}
+
+.movie h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.movie p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #005AA7;
+  border-radius: 3em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
